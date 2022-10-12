@@ -2,6 +2,25 @@
 
 This document includes the same release notes as in the [Releases](https://github.com/valinet/ExplorerPatcher/releases) section on GitHub.
 
+## 22621.608.51
+
+Tested on OS builds 22621.608 and 22000.1042.
+
+Please make sure you are connected to the Internet while installing, the application might need to perform one-time downloads for several resources in order to enable full functionality.
+
+#### Details
+
+##### 1
+
+* Fixed a bug that could prevent the Windows 10 network or battery flyouts from showing on OS build 22000.
+* Fixed the Windows 10 network and battery flyouts on OS build 22621.
+* Weather: Fixed a bug that displayed the widget contents with incorrect left padding.
+
+##### 2
+
+* sws: Support for changing selection in window list using the mouse wheel (suggestion by andrewz).
+* Fix broken "Cascade windows", "Show windows stacked", "Show windows side by side", and "Undo ..." options in taskbar context menu (reported by iamk9008).
+
 ## 22622.450.50
 
 Tested on OS build 22622.450.
@@ -19,6 +38,11 @@ Please make sure you are connected to the Internet while installing, the applica
 
 * Support for disabling the modern search bar in 32-bit applications as well (thanks @krlvm).
 * Fixed a bug that could prevent deleting registry keys when the application was supposed to (for example, when uninstalling or toggling certain settings).
+
+##### 3
+
+* Fixed incorrect check for running dwm instances in `ep_dwm`
+* Fixed a use-after-free bug in `ep_dwm` (thanks @ibhk)
 
 ## 22000.795.48
 
