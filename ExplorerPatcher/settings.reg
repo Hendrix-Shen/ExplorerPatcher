@@ -157,7 +157,7 @@
 ;x 0 Windows 7 弹出式界面
 "EnableMtcUvc"=dword:00000001
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\ImmersiveShell]
-;c 3 Clock
+;c 3 时钟
 ;x 2 Windows 11 弹出式界面
 ;x 0 Windows 10 弹出式界面 (默认)
 ;x 1 Windows 7
@@ -700,7 +700,7 @@
 
 ;T 高级
 ;e 请阅读文档后再对下列设置进行修改.
-;y Learn more 🡕
+;y 了解更多 🡕
 ;https://github.com/valinet/ExplorerPatcher/wiki/About-advanced-settings
 ;q
 [HKEY_CURRENT_USER\Software\ExplorerPatcher]
