@@ -2,6 +2,24 @@
 
 This document includes the same release notes as in the [Releases](https://github.com/valinet/ExplorerPatcher/releases) section on GitHub.
 
+## 22621.819.52
+
+Tested on OS builds 22621.819 and 22000.1098.
+
+Please make sure you are connected to the Internet while installing, the application might need to perform one-time downloads for several resources in order to enable full functionality.
+
+#### Details
+
+##### 1
+
+* Windows 11 Start menu: Implemented centering on screen when taskbar is not at the bottom. (4212e35)
+* Windows 11 taskbar: Option to use the stock taskbar context menu. (451db3c)
+* Fixed a bug that could display the Start menu on a wrong monitor or outside the screen when the taskbar was moved to the top of the screen and the previous setting was at the right edge of the screen. (53fad19)
+
+##### 2
+
+* Windows 11 Start menu: Fixed a bug that prevented the disable "Recommended" section feature from working when the scaling level of the screen the Start menu is displayed on is set to 125% (120 DPI). (9f9d43e)
+
 ## 22621.608.51
 
 Tested on OS builds 22621.608 and 22000.1042.
@@ -31,6 +49,18 @@ Please make sure you are connected to the Internet while installing, the applica
 * sws: Fixed a bug that could unexpectedly move the switcher to another monitor when your cursor was placed on the other monitor, the option to have the switcher display on the monitor the cursor is placed on is enabled and the switcher finished refreshing its data in the background (https://github.com/valinet/sws/commit/8b68539201102801367ef8f3716b9f1260e2dbe5).
 * sws: Fixed a bug that could prevent hotkey associations from being properly cleaned up when you disabled the setting to have a per-application window list (https://github.com/valinet/sws/commit/c5776e5a6a0c5495892a15e16a1def31b225fc51).
 * sws: Fixed a bug that could prevent correct reload of settings when entries were directly deleted from the registry (cbc5f19).
+
+##### 4
+
+* Windows 11 taskbar: Fixed a bug that could crash `explorer.exe` when right clicking certain system tray icons on 22621-based builds. Thanks for the reports about this issue. (a6a88b1)
+
+##### 5
+
+* Windows 11 Start menu: Fixed a bug that prevented the menu from taking into account the "Layout" setting from Windows Settings - Personalization - Taskbar on 22621-based builds. (2572a80)
+
+##### 6
+
+* Fixed a bug that could cause the host process of ExplorerPatcher to crash under certain circumstances. (d7a0385)
 
 ## 22622.450.50
 

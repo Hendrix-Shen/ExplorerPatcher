@@ -725,7 +725,7 @@
 ;d 为资源管理器视图启用 SysListView32 *
 @=""
 [HKEY_CURRENT_USER\Software\ExplorerPatcher]
-;b 在任务栏上下文菜单隐藏程序设置按钮 ("属性")
+;b 不修改任务栏上下文菜单 (例如 不显示 "属性" 选项)
 "NoPropertiesInContextMenu"=dword:00000000
 ;b 启用符号下载 *
 "EnableSymbolDownload"=dword:00000001
